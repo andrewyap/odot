@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe "Creating todo lists" do
 
-	def create_todo_list(options={})
+	def create_todo_list(options = {})
 		options[:title] ||= "Grocery list"
 		options[:description] ||= "This is my list of groceries to buy."
 		visit "/todo_lists"
