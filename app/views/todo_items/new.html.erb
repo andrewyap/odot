@@ -1,0 +1,13 @@
+<h1>Add new items to "<%= @todo_list.title %>"</h1>
+
+<%= form_for [@todo_list, @todo_item] do |f| %>
+
+	<div class="field">
+		<%= f.label :content %><br> 
+		<%= f.text_field :content %>
+	</div>
+	<div class="actions">
+		<%= f.submit "Save" %>
+	</div>
+
+<% end %>
